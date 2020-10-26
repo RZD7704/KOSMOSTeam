@@ -1,0 +1,3 @@
+
+
+$('.haters').fadeOut();

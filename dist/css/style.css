@@ -1,0 +1,353 @@
+@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  min-height: 100%;
+  width: 100%;
+}
+
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+
+ul {
+  margin-left: 0;
+  /* Отступ слева в браузере IE и Opera */
+  padding-left: 0;
+  /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.clear::after,
+.clear::before {
+  content: " ";
+  display: table;
+}
+
+.clear::after {
+  clear: both;
+}
+
+body {
+  font: 16px "Poppins", sans-serif;
+  color: #DEDEDE;
+  font-weight: 500;
+}
+
+.header {
+  padding: 15px 0;
+  background-color: #070D18;
+}
+
+.header__border {
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header-profile {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-profile__img {
+  background: #C4C4C4;
+  width: 42px;
+  height: 42px;
+  margin: auto 0;
+  border-radius: 50%;
+}
+
+.header-nav__list {
+  display: flex;
+}
+
+.header-nav__item {
+  padding: 0 25px;
+}
+
+.header-nav__link {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: #FDFDFD;
+  transition: all .5s;
+}
+
+.header-nav__link:hover {
+  color: #B65AFE;
+  text-decoration: none;
+}
+
+.main-page {
+  background: #070D18;
+  height: calc(100vh - 102px);
+}
+
+.main-page__wrapper {
+  display: flex;
+  position: relative;
+}
+
+.main-social {
+  width: 70px;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
+  height: calc(100vh - 102px);
+  position: relative;
+}
+
+.main-social__nav {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -15px;
+}
+
+.main-social__item {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.main-social__icon {
+  fill: #fff;
+}
+
+.main-social__icon_big {
+  width: 30px;
+  height: 30px;
+}
+
+.main-social__icon_small {
+  width: 20px;
+  height: 20px;
+}
+
+.main-banner {
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-banner__title {
+  font-weight: 600;
+  font-size: 64px;
+  color: #B65AFE;
+}
+
+.main-banner__subtitle {
+  font-weight: normal;
+  font-size: 28px;
+  color: #A5A5A5;
+  padding-bottom: 35px;
+}
+
+.main-banner__button {
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: transparent;
+  padding: 15px 80px;
+  border: 2px solid #FDFDFD;
+  transition: all .5s;
+}
+
+.main-banner__button:hover {
+  background-color: #FDFDFD;
+  color: #070D18;
+}
+
+.main-message {
+  position: absolute;
+  right: 0;
+  bottom: 50px;
+}
+
+.main-message__btn {
+  background: transparent;
+}
+
+.main-message__icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .header-profile {
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    width: 70px;
+    height: 100px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+  }
+
+  .header-profile__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .header-nav__link {
+    font-size: 18px;
+  }
+}
