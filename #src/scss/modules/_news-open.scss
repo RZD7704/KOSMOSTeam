@@ -1,0 +1,32 @@
+.open-news {
+
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 22px;
+        letter-spacing: 0.02em;
+        color: #363636;
+        padding-bottom: 25px;
+    }
+
+    &__txt {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        color: #363636;
+        padding-bottom: 40px;
+    }
+
+    &__txt_pb_20 {
+        padding-bottom: 20px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+    }
+}

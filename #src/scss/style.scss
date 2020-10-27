@@ -6,7 +6,12 @@
 // Layout
 @import "layout/_general";
 @import "layout/_fonts";
+@import "layout/_extra";
 
 // Page styles
 @import "modules/_header";
 @import "modules/_main-page";
+@import "modules/_section-request";
+@import "modules/_section-news";
+@import "modules/_news-open";
+@import "modules/_footer";

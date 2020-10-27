@@ -13,7 +13,7 @@
     }
 }
 
-.header-profile {
+.header-logo {
     width: 50px;
     height: 50px;
     display: flex;
@@ -70,5 +70,16 @@
             color: #B65AFE;
             text-decoration: none;
         }
+    }
+}
+
+.swiper-header {
+
+    &__slide {
+        font-size: 18px;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        min-width: 500px;
     }
 }

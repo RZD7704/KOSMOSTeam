@@ -29,6 +29,15 @@ ul {
 	/* Отступ слева в браузере Firefox, Safari, Chrome */
 }
 
+button:active,
+button:focus {
+	outline: none;
+}
+
+button::-moz-focus-inner {
+	border: 0;
+}
+
 .clear::after,
 .clear::before {
 	content: " ";
@@ -45,6 +54,52 @@ ul {
 
 body {
 	font: 16px $Poppins;
-	color: #DEDEDE;
+	color: #363636;
 	font-weight: 500;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex-shrink: 0;
+}
+
+.custom-container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+
+	@media (min-width: 576px) {
+		max-width: 540px;
+	}
+
+	@media (min-width: 768px) {
+		max-width: 720px;
+	}
+
+	@media (min-width: 992px) {
+		max-width: 960px;
+	}
+
+	@media (min-width: 1200px) {
+		max-width: 1140px;
+	}
+
+	@media (min-width: 1600px) {
+		max-width: 1440px;
+	}
 }
