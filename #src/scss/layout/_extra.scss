@@ -1,4 +1,4 @@
-.btn {
+.custom-btn {
     margin: 0 auto;
     color: #363636;
     font-weight: 500;
@@ -24,11 +24,11 @@
     }
 }
 
-.btn_i-block {
+.custom-btn_i-block {
     display: inline-block;
 }
 
-.btn_d-block {
+.custom-btn_d-block {
     display: block;
 }
 
@@ -37,7 +37,6 @@
     font-size: 16px;
     letter-spacing: 0.04em;
     color: #B65AFE;
-    padding-top: 60px;
 
     @media (min-width: 576px) {
         font-size: 28px;
@@ -48,8 +47,31 @@
     }
 }
 
-.section-title_pb_30 {
+.section-subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    color: #A5A5A5;
+
+    @media (min-width: 576px) {
+        font-size: 14px;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 16px;
+    }
+}
+
+.section-head {
+    padding-top: 60px;
+}
+
+.section-head_pb_30 {
     padding-bottom: 30px;
+}
+
+.section-head_pb_50 {
+    padding-bottom: 50px;
 }
 
 .main-scroll-btn {

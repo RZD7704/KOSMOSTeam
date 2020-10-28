@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    @@include('_header.html')
+    <div class="content">
+        <main class="main">
+            <section class="section team">
+                <div class="custom-container">
+                    <div class="section-head section-head_pb_50">
+                        <h2 class="section-title">About us</h2>
+                    </div>
+                    <div class="section__inner">
+                        <div class="team__wrapper">
+                            <div class="team-wgt">
+                                <div class="team-wgt__photo">
+                                    <img class="team-wgt__photo-img" src="img/tatyana-photo.png" alt="photo">
+                                </div>
+                                <div class="team-wgt__description">
+                                    <h3 class="team-wgt__description-title">Kladuhina Tatyana</h3>
+                                    <p class="team-wgt__description-subtitle">Project Manager </p>
+                                    <div class="team-wgt__description-nav">
+                                        <a class="team-wgt__description-nav--link" href="#">
+                                            <svg  class="team-wgt__description-nav--icon">
+                                                <use xlink:href="../img/icons/icons.svg#linkedin-pink-icon"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="team-wgt__description-excerpt"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    @@include('_footer.html')
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

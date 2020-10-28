@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gulp</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    @@include('_header.html')
+    <div class="content">
+        <main class="main">
+            <section class="section contacts">
+                <div class="custom-container">
+                    <div class="section-head section-head_pb_50">
+                        <h2 class="section-title">Contacts</h2>
+                        <p class="section-subtitle">Be Original</p>
+                    </div>
+                    <div class="contacts">
+                        <form class="contacts-form" action="#">
+                            <div class="contacts-form__wrapper">
+                                <div class="contacts-description">
+                                    <h3 class="contacts-description__title">TO DISSCUS</h3>
+                                    <p class="contacts-description__txt">
+                                        Hi, my name is Tanya and I the project manager of "Be Original". I am responsible for the project implementation time and the quality of the tasks. I love cats and  love eat.</p>
+                                </div>
+                                <div class="contacts-fields">
+                                    <div class="contacts-fields__item">
+                                        <div class="contacts-fields__name">Name</div>
+                                        <input class="contacts-fields__field" type="text">
+                                    </div>
+                                    <div class="contacts-fields__item">
+                                        <div class="contacts-fields__name">Email</div>
+                                        <input class="contacts-fields__field" type="text">
+                                    </div>
+                                    <div class="contacts-fields__item">
+                                        <div class="contacts-fields__name">Phone</div>
+                                        <input class="contacts-fields__field" type="text">
+                                    </div>
+                                    <div class="contacts-fields__item">
+                                        <div class="contacts-fields__name">Services</div>
+                                        <input class="contacts-fields__field" type="text">
+                                    </div>
+                                </div>
+                                <div class="contacts-info d-none d-xl-block">
+                                    <div class="contacts-info__wgt">
+                                        <p class="contacts-info__headline">Location</p>
+                                        <p class="contacts-info__excerpt">Ukraine, Poltava,</p>
+                                        <p class="contacts-info__excerpt">Hoholya steet, 12</p>
+                                    </div>
+                                    <div class="contacts-info__wgt">
+                                        <p class="contacts-info__headline">Contacts</p>
+                                        <a class="contacts-info__link" href="tel:+380666757676">+38 066 675 76 76</a>
+                                        <a class="contacts-info__link" href="mailto:be.original@gmail.com">be.original@gmail.com</a>
+                                    </div>
+                                    <div class="contacts-info__wgt">
+                                        <p class="contacts-info__headline">Social</p>
+                                        <a class="contacts-info__link" href="#">Behance</a>
+                                        <a class="contacts-info__link" href="#">Linkedin</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="contacts-form__btn" type="submit">ТO DISSCUS</button>
+                        </form>
+
+                        <div class="contacts-info d-xl-none">
+                            <div class="contacts-info__wgt">
+                                <p class="contacts-info__headline">Location</p>
+                                <p class="contacts-info__excerpt">Ukraine, Poltava,</p>
+                                <p class="contacts-info__excerpt">Hoholya steet, 12</p>
+                            </div>
+                            <div class="contacts-info__wgt">
+                                <p class="contacts-info__headline">Contacts</p>
+                                <a class="contacts-info__link" href="tel:+380666757676">+38 066 675 76 76</a>
+                                <a class="contacts-info__link" href="mailto:be.original@gmail.com">be.original@gmail.com</a>
+                            </div>
+                            <div class="contacts-info__wgt">
+                                <p class="contacts-info__headline">Social</p>
+                                <a class="contacts-info__link" href="#">Behance</a>
+                                <a class="contacts-info__link" href="#">Linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    @@include('_footer.html')
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -170,14 +170,15 @@
 }
 
 .description-nav {
-    &__list {}
-
-    &__item {}
-
     &__link {
         font-weight: normal;
         font-size: 12px;
         letter-spacing: 0.02em;
         color: #363636;
+
+        &:hover {
+            text-decoration: none;
+            color: #363636;
+        }
     }
 }
