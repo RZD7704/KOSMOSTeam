@@ -1,0 +1,121 @@
+.team {
+    &__wrapper_vertical {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.team-wgt {
+    padding-bottom: 35px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 80px;
+    }
+
+    @media (min-width: 992px) {
+        padding-bottom: 100px;
+    }
+
+    @media (min-width: 1600px) {
+        padding-bottom: 130px;
+    }
+
+    &__photo {
+        border-radius: 30px;
+    }
+
+    &__description {}
+
+    &__description-title {
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0.02em;
+        color: #363636;
+    }
+
+    &__description-subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.02em;
+        color: #A5A5A5;
+        padding-bottom: 15px;
+    }
+
+    &__description-nav {
+        display: flex;
+        align-items: center;
+
+        @media (min-width: 768px) {
+            padding-bottom: 30px;
+        }
+
+        &--link {
+            margin-right: 20px;
+        }
+
+        &--icon_small {
+            width: 20px;
+            height: 20px;
+        }
+
+        &--icon_big {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__description-excerpt {
+        font-weight: normal;
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: #363636;
+    }
+}
+
+.team-wgt_style_vertical {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
+}
+
+.team-wgt__photo_style_vertical {
+    padding-bottom: 15px;
+}
+
+.team-wgt_style_horizontal {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.team-wgt__photo_style_horizontal {
+    padding-bottom: 15px;
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 45%;
+    }
+}
+
+.team-wgt__description_style_horizontal {
+    width: 100%;
+
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+}
+
+.team-wgt__description_pl_50 {
+    @media (min-width: 1200px) {
+        padding-left: 10%;
+    }
+}
+
+.team-wgt__description_pr_50 {
+    @media (min-width: 1200px) {
+        padding-right: 10%;
+    }
+}

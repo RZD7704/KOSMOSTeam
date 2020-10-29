@@ -440,13 +440,13 @@ body {
 }
 
 .main-social__icon_big {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .main-social__icon_small {
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
 }
 
 .main-banner {
@@ -510,8 +510,8 @@ body {
 }
 
 .main-message__icon {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
 }
 
 .swiper-portfolio {
@@ -680,7 +680,7 @@ body {
 
 .news-wgt__headline {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 16px;
   letter-spacing: 0.02em;
   color: #363636;
   padding-bottom: 15px;
@@ -688,7 +688,7 @@ body {
 
 .news-wgt__excerpt {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 0.03em;
   color: #363636;
 }
@@ -698,7 +698,7 @@ body {
   background: #FDFDFD;
   display: block;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 0.04em;
   color: #363636;
   border: 2px solid #C7C7C7;
@@ -760,6 +760,7 @@ body {
 
 .services-wgt__description {
   width: 100%;
+  padding-bottom: 20px;
 }
 
 .services-wgt__description-p {
@@ -849,6 +850,84 @@ body {
   padding: 10px 5px;
 }
 
+.team__wrapper_vertical {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-wgt {
+  padding-bottom: 35px;
+}
+
+.team-wgt__photo {
+  border-radius: 30px;
+}
+
+.team-wgt__description-title {
+  font-weight: 600;
+  font-size: 24px;
+  letter-spacing: 0.02em;
+  color: #363636;
+}
+
+.team-wgt__description-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #A5A5A5;
+  padding-bottom: 15px;
+}
+
+.team-wgt__description-nav {
+  display: flex;
+  align-items: center;
+}
+
+.team-wgt__description-nav--link {
+  margin-right: 20px;
+}
+
+.team-wgt__description-nav--icon_small {
+  width: 20px;
+  height: 20px;
+}
+
+.team-wgt__description-nav--icon_big {
+  width: 30px;
+  height: 30px;
+}
+
+.team-wgt__description-excerpt {
+  font-weight: normal;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  color: #363636;
+}
+
+.team-wgt_style_vertical {
+  width: 100%;
+}
+
+.team-wgt__photo_style_vertical {
+  padding-bottom: 15px;
+}
+
+.team-wgt_style_horizontal {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-wgt__photo_style_horizontal {
+  padding-bottom: 15px;
+  width: 100%;
+}
+
+.team-wgt__description_style_horizontal {
+  width: 100%;
+}
+
 .contacts-form {
   padding-bottom: 50px;
 }
@@ -923,6 +1002,7 @@ body {
 
 .contacts-info {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
 }
 
@@ -1228,6 +1308,16 @@ body {
     font-size: 14px;
   }
 
+  .main-social__icon_big {
+    width: 25px;
+    height: 25px;
+  }
+
+  .main-social__icon_small {
+    width: 18px;
+    height: 18px;
+  }
+
   .main-banner__title {
     font-size: 42px;
   }
@@ -1239,6 +1329,15 @@ body {
   .main-banner__button {
     font-size: 20px;
     padding: 10px 60px;
+  }
+
+  .main-message__icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .contacts-info {
+    flex-direction: row;
   }
 
   .footer-description__col:first-child {
@@ -1295,6 +1394,16 @@ body {
     height: calc(100vh - 102px);
   }
 
+  .main-social__icon_big {
+    width: 30px;
+    height: 30px;
+  }
+
+  .main-social__icon_small {
+    width: 20px;
+    height: 20px;
+  }
+
   .main-banner__title {
     font-size: 64px;
   }
@@ -1312,6 +1421,11 @@ body {
   .main-message {
     width: 70px;
     height: calc(100vh - 102px);
+  }
+
+  .main-message__icon {
+    width: 40px;
+    height: 40px;
   }
 
   .swiper-portfolio__description-title {
@@ -1361,6 +1475,18 @@ body {
     width: 40%;
   }
 
+  .news-wgt__headline {
+    font-size: 22px;
+  }
+
+  .news-wgt__excerpt {
+    font-size: 16px;
+  }
+
+  .news-wgt__nav-btn {
+    font-size: 18px;
+  }
+
   .services-wgt {
     padding-bottom: 50px;
   }
@@ -1392,6 +1518,26 @@ body {
 
   .vacancies-fields {
     padding: 40px 30px 20px 30px;
+  }
+
+  .team-wgt {
+    padding-bottom: 80px;
+  }
+
+  .team-wgt__description-nav {
+    padding-bottom: 30px;
+  }
+
+  .team-wgt_style_vertical {
+    width: 45%;
+  }
+
+  .team-wgt__photo_style_horizontal {
+    width: 45%;
+  }
+
+  .team-wgt__description_style_horizontal {
+    width: 50%;
   }
 
   .contacts-form__btn {
@@ -1523,6 +1669,7 @@ body {
 
   .services-wgt__description {
     width: 50%;
+    padding-bottom: 0;
   }
 
   .services-wgt__nav {
@@ -1540,6 +1687,10 @@ body {
 
   .vacancies-fields__name {
     font-size: 18px;
+  }
+
+  .team-wgt {
+    padding-bottom: 100px;
   }
 
   .contacts-description {
@@ -1606,6 +1757,11 @@ body {
     font-size: 18px;
   }
 
+  .main-message__icon {
+    width: 50px;
+    height: 50px;
+  }
+
   .request-form__btn {
     font-size: 18px;
   }
@@ -1632,6 +1788,14 @@ body {
 
   .vacancies-fields__name {
     font-size: 22px;
+  }
+
+  .team-wgt__description_pl_50 {
+    padding-left: 10%;
+  }
+
+  .team-wgt__description_pr_50 {
+    padding-right: 10%;
   }
 
   .contacts-form__btn {
@@ -1707,6 +1871,10 @@ body {
 
   .disscus-modal__headline {
     font-size: 32px;
+  }
+
+  .team-wgt {
+    padding-bottom: 130px;
   }
 
   .contacts-form {

@@ -145,7 +145,12 @@
 
 .contacts-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+
+    @media (min-width: 576px) {
+        flex-direction: row;
+    }
 
     @media (min-width: 1200px) {
         flex-direction: column;
