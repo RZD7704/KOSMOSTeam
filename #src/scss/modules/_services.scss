@@ -74,6 +74,10 @@
 
     &__nav-btn {
         max-height: 60px;
+
+        &:hover {
+            text-decoration: none !important;
+        }
     }
 }
 

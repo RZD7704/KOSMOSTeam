@@ -1,32 +1,34 @@
-.open-news {
+.news-open-content {
+    padding-bottom: 30px;
 
-    &__inner {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-
-    &__title {
+    &__headline {
         font-weight: 500;
-        font-size: 22px;
+        font-size: 16px;
         letter-spacing: 0.02em;
-        color: #363636;
-        padding-bottom: 25px;
+        color: #B65AFE;
+        margin-bottom: 15px;
     }
 
     &__txt {
         font-weight: normal;
         font-size: 16px;
-        letter-spacing: 0.04em;
+        letter-spacing: 0.03em;
         color: #363636;
-        padding-bottom: 40px;
+        margin-bottom: 25px;
     }
+}
 
-    &__txt_pb_20 {
-        padding-bottom: 20px;
-    }
+.open-news {
+    padding-bottom: 60px;
 
     &__nav {
         display: flex;
         justify-content: center;
+    }
+
+    &__nav-btn {
+        &:hover {
+            text-decoration: none;
+        }
     }
 }
