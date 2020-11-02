@@ -16,15 +16,9 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.04em;
-        background: transparent;
         border: 2px solid #C7C7C7;
         transition: all .5s;
         padding: 5px 30px;
-
-        &:hover {
-            background-color: #070D18;
-            color: #FDFDFD;
-        }
 
         @media (min-width: 768px) {
             padding: 15px 80px;

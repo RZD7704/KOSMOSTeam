@@ -1,0 +1,103 @@
+// Neon
+$bg-color: #1A1A1B;
+$purpur: rgba(182, 90, 254, 1.0);
+$purpur-neon-0: rgba(182, 90, 254, 1.0);
+$purpur-neon-1: rgba(159, 45, 247, 0.3);
+$purpur-neon-2: rgba(182, 90, 254, 0.3);
+$purpur-neon-3: rgba(159, 45, 247, 0.3);
+
+/* MIXINS */
+@mixin font-size($sizeValue) {
+    $remValue: $sizeValue;
+    $pxValue: ($sizeValue * 10);
+    font-size: $pxValue + px;
+    line-height: ($sizeValue * 1.5 * 10) + px;
+    font-size: $remValue + rem;
+    line-height: $sizeValue * 1.5 + rem;
+}
+
+@mixin x-rem ($property, $value) {
+    #{$property}: $value * $main-font-size;
+    #{$property}: #{$value}rem;
+}
+
+@mixin btn-neon($color, $bg:none) {
+    touch-action: manipulation;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+
+    @media (min-width: 480px) {
+        width: auto;
+    }
+
+
+    &:hover {
+        border: 2px solid $purpur;
+        animation: intermittente 0.01s infinite alternate;
+        box-shadow: 0px 0px 35px $purpur-neon-1,
+            0 0 11px $purpur-neon-1,
+            0 0 2px $purpur-neon-2,
+            0 0 1px $purpur-neon-3,
+            0 0px 17px $purpur-neon-1,
+            inset 0px 0 17px $purpur-neon-3,
+            inset 0px 0 30px $purpur-neon-3;
+    }
+
+}
+
+/* ANIMATIONS */
+@keyframes intermittente {
+    75% {
+        opacity: 0.7;
+    }
+}
+
+.btn-neon {
+    @include btn-neon($purpur);
+}
+
+// Fill
+$hover: all 0.2s ease-in;
+$slide:all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+//COLORS
+$dark:#070D18;
+$grey:#363636;
+$white: #FDFDFD;
+
+.btn-fill {
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+
+    &:hover {
+        background-position: 100% !important;
+
+    }
+}
+
+.btn-fill_theme_dark {
+    background-size: 700px;
+    color: #FDFDFD;
+    border: 2px solid #070D18;
+    background-image: linear-gradient(30deg, $white 50%, transparent 50%);
+
+    &:hover {
+        color: #FDFDFD;
+        background-color: #070D18;
+    }
+}
+
+.btn-fill_theme_white {
+    background-size: 250% !important;
+    color: #363636;
+    border: 2px solid #C7C7C7;
+    background-image: linear-gradient(30deg, $white 50%, transparent 50%) !important;
+
+    &:hover {
+        color: #363636;
+        background: #C7C7C7;
+    }
+}

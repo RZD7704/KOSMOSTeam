@@ -238,15 +238,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
-  background: transparent;
   border: 2px solid #C7C7C7;
   transition: all .5s;
   padding: 5px 30px;
-}
-
-.custom-btn:hover {
-  background-color: #070D18;
-  color: #FDFDFD;
 }
 
 .custom-btn_i-block {
@@ -346,6 +340,71 @@ body {
     margin-top: 15%;
     opacity: 0;
   }
+}
+
+/* MIXINS */
+
+/* ANIMATIONS */
+
+@-webkit-keyframes intermittente {
+  75% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes intermittente {
+  75% {
+    opacity: 0.7;
+  }
+}
+
+.btn-neon {
+  touch-action: manipulation;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+.btn-neon:hover {
+  border: 2px solid #b65afe;
+  -webkit-animation: intermittente 0.01s infinite alternate;
+          animation: intermittente 0.01s infinite alternate;
+  box-shadow: 0px 0px 35px rgba(159, 45, 247, 0.3), 0 0 11px rgba(159, 45, 247, 0.3), 0 0 2px rgba(182, 90, 254, 0.3), 0 0 1px rgba(159, 45, 247, 0.3), 0 0px 17px rgba(159, 45, 247, 0.3), inset 0px 0 17px rgba(159, 45, 247, 0.3), inset 0px 0 30px rgba(159, 45, 247, 0.3);
+}
+
+.btn-fill {
+  background-repeat: no-repeat;
+  background-position: 0%;
+  transition: background 300ms ease-in-out;
+}
+
+.btn-fill:hover {
+  background-position: 100% !important;
+}
+
+.btn-fill_theme_dark {
+  background-size: 700px;
+  color: #FDFDFD;
+  border: 2px solid #070D18;
+  background-image: linear-gradient(30deg, #FDFDFD 50%, transparent 50%);
+}
+
+.btn-fill_theme_dark:hover {
+  color: #FDFDFD;
+  background-color: #070D18;
+}
+
+.btn-fill_theme_white {
+  background-size: 250% !important;
+  color: #363636;
+  border: 2px solid #C7C7C7;
+  background-image: linear-gradient(30deg, #FDFDFD 50%, transparent 50%) !important;
+}
+
+.btn-fill_theme_white:hover {
+  color: #363636;
+  background: #C7C7C7;
 }
 
 .header {
@@ -485,8 +544,7 @@ body {
 }
 
 .main-banner__button:hover {
-  background-color: #FDFDFD;
-  color: #070D18;
+  color: #FDFDFD;
 }
 
 .main-banner__scroll {
@@ -609,15 +667,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
-  background: transparent;
   border: 2px solid #C7C7C7;
   transition: all .5s;
   padding: 5px 30px;
-}
-
-.request-form__btn:hover {
-  background-color: #070D18;
-  color: #FDFDFD;
 }
 
 .request-description {
@@ -700,16 +752,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
-  color: #363636;
-  border: 2px solid #C7C7C7;
   transition: all .3s;
   padding: 10px 0;
 }
 
 .news-wgt__nav-btn:hover {
   text-decoration: none;
-  color: #363636;
-  background: #C7C7C7;
 }
 
 .news-open-content {
@@ -822,15 +870,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
-  background: transparent;
   border: 2px solid #C7C7C7;
   transition: all .5s;
   padding: 5px 30px;
-}
-
-.vacancies-form__btn:hover {
-  background-color: #070D18;
-  color: #FDFDFD;
 }
 
 .vacancies-fields {
@@ -954,15 +996,9 @@ body {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
-  background: transparent;
   border: 2px solid #C7C7C7;
   transition: all .5s;
   padding: 5px 30px;
-}
-
-.contacts-form__btn:hover {
-  background-color: #070D18;
-  color: #FDFDFD;
 }
 
 .contacts-description {
@@ -1497,6 +1533,12 @@ body {
 .menu-description-nav__link:hover {
   text-decoration: none;
   color: #FAFAFA;
+}
+
+@media (min-width: 480px) {
+  .btn-neon {
+    width: auto;
+  }
 }
 
 @media (min-width: 576px) {

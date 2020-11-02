@@ -53,15 +53,11 @@
         font-weight: 500;
         font-size: 16px;
         letter-spacing: 0.04em;
-        color: #363636;
-        border: 2px solid #C7C7C7;
         transition: all .3s;
         padding: 10px 0;
 
         &:hover {
             text-decoration: none;
-            color: #363636;
-            background: #C7C7C7;
         }
 
         @media (min-width: 768px) {
